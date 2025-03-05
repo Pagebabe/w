@@ -1,3 +1,109 @@
-
-[]
-      
+[
+  {
+    "name": "KJNodes for ComfyUI",
+    "url": "https://github.com/kijai/ComfyUI-KJNodes",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "kijai",
+      "title": "KJNodes for ComfyUI",
+      "id": "kjnodes",
+      "reference": "https://github.com/kijai/ComfyUI-KJNodes",
+      "files": [
+        "https://github.com/kijai/ComfyUI-KJNodes"
+      ],
+      "install_type": "git-clone",
+      "description": "Various quality of life -nodes for ComfyUI, mostly just visual stuff to improve usability."
+    },
+    "nodes": [
+      "GetImageSizeAndCount"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI-GGUF",
+    "url": "https://github.com/city96/ComfyUI-GGUF",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "city96",
+      "title": "ComfyUI-GGUF",
+      "id": "comfyui-gguf",
+      "reference": "https://github.com/city96/ComfyUI-GGUF",
+      "files": [
+        "https://github.com/city96/ComfyUI-GGUF"
+      ],
+      "install_type": "git-clone",
+      "description": "GGUF Quantization support for native ComfyUI models\nThis is currently very much WIP. These custom nodes provide support for model files stored in the GGUF format popularized by llama.cpp.\nWhile quantization wasn't feasible for regular UNET models (conv2d), transformer/DiT models such as flux seem less affected by quantization. This allows running it in much lower bits per weight variable bitrate quants on low-end GPUs."
+    },
+    "nodes": [
+      "UnetLoaderGGUF"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [
+      "CLIPLoaderGGUF",
+      "DualCLIPLoaderGGUF",
+      "TripleCLIPLoaderGGUF",
+      "UnetLoaderGGUF",
+      "UnetLoaderGGUFAdvanced"
+    ],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI_PuLID_Flux_ll",
+    "url": "https://github.com/lldacing/ComfyUI_PuLID_Flux_ll",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "lldacing",
+      "title": "ComfyUI_PuLID_Flux_ll",
+      "id": "comfyui_pulid_flux_ll",
+      "reference": "https://github.com/lldacing/ComfyUI_PuLID_Flux_ll",
+      "files": [
+        "https://github.com/lldacing/ComfyUI_PuLID_Flux_ll"
+      ],
+      "install_type": "git-clone",
+      "description": "The implementation for PuLID-Flux, support TeaCache, no model pollution."
+    },
+    "nodes": [
+      "PulidFluxEvaClipLoader",
+      "PulidFluxInsightFaceLoader",
+      "PulidFluxModelLoader",
+      "ApplyPulidFlux"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI-PuLID-Flux-Enhanced",
+    "url": "https://github.com/sipie800/ComfyUI-PuLID-Flux-Enhanced",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "sipie800",
+      "title": "ComfyUI-PuLID-Flux-Enhanced",
+      "reference": "https://github.com/sipie800/ComfyUI-PuLID-Flux-Enhanced",
+      "files": [
+        "https://github.com/sipie800/ComfyUI-PuLID-Flux-Enhanced"
+      ],
+      "install_type": "git-clone",
+      "description": "adapted from [a/https://github.com/balazik/ComfyUI-PuLID-Flux](https://github.com/balazik/ComfyUI-PuLID-Flux).\ncommon fusion methods for multi-image input, some further experimental fusion methods, switch between using gray image (official) and rgb.,"
+    },
+    "nodes": [
+      "PulidFluxEvaClipLoader",
+      "PulidFluxInsightFaceLoader",
+      "PulidFluxModelLoader",
+      "ApplyPulidFlux"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  }
+]
