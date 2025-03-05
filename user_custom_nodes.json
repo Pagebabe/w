@@ -169,5 +169,26 @@
     "pip": [],
     "apt": [],
     "cached": "False"
+  },
+  {
+    "name": "comfyui_controlnet_aux.git",
+    "url": "https://github.com/Fannovel16/comfyui_controlnet_aux.git",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Fannovel16",
+      "title": "ComfyUI Frame Interpolation",
+      "id": "frame-interpolation",
+      "reference": "https://github.com/Fannovel16/ComfyUI-Frame-Interpolation",
+      "files": [
+        "https://github.com/Fannovel16/ComfyUI-Frame-Interpolation"
+      ],
+      "install_type": "git-clone",
+      "description": "A custom node suite for Video Frame Interpolation in ComfyUI"
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
   }
 ]
