@@ -1,12 +1,12 @@
 {
     "3": {
         "inputs": {
-            "seed": 406752582580152,
+            "seed": 372668336580565,
             "steps": 20,
             "cfg": 8,
-            "sampler_name": "euler",
-            "scheduler": "normal",
-            "denoise": 0.2,
+            "sampler_name": "euler_ancestral",
+            "scheduler": "karras",
+            "denoise": 0.6900000000000001,
             "model": [
                 "4",
                 0
@@ -20,7 +20,7 @@
                 1
             ],
             "latent_image": [
-                "17",
+                "5",
                 0
             ]
         },
@@ -51,7 +51,7 @@
     },
     "6": {
         "inputs": {
-            "text": "beautiful scenery nature glass bottle landscape, , purple galaxy bottle,",
+            "text": "pin up girl",
             "clip": [
                 "4",
                 1
@@ -106,7 +106,7 @@
     },
     "11": {
         "inputs": {
-            "preprocessor": "none",
+            "preprocessor": "OpenposePreprocessor",
             "resolution": 512,
             "image": [
                 "12",
@@ -128,23 +128,11 @@
             "title": "Load Image"
         }
     },
-    "13": {
-        "inputs": {
-            "images": [
-                "11",
-                0
-            ]
-        },
-        "class_type": "PreviewImage",
-        "_meta": {
-            "title": "Preview Image"
-        }
-    },
     "14": {
         "inputs": {
-            "strength": 1,
+            "strength": 0.48,
             "start_percent": 0,
-            "end_percent": 1,
+            "end_percent": 0.8160000000000001,
             "positive": [
                 "6",
                 0
@@ -182,7 +170,7 @@
     },
     "16": {
         "inputs": {
-            "image": "2x_00017_.png",
+            "image": "2x_00010_.png",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -204,6 +192,56 @@
         "class_type": "VAEEncode",
         "_meta": {
             "title": "VAE Encode"
+        }
+    },
+    "18": {
+        "inputs": {
+            "enabled": true,
+            "swap_model": "inswapper_128.onnx",
+            "facedetection": "retinaface_resnet50",
+            "face_restore_model": "none",
+            "face_restore_visibility": 1,
+            "codeformer_weight": 0.5,
+            "detect_gender_input": "no",
+            "detect_gender_source": "no",
+            "input_faces_index": "0",
+            "source_faces_index": "0",
+            "console_log_level": 1,
+            "face_boost": [
+                "20",
+                0
+            ]
+        },
+        "class_type": "ReActorFaceSwap",
+        "_meta": {
+            "title": "ReActor 🌌 Fast Face Swap"
+        }
+    },
+    "20": {
+        "inputs": {
+            "enabled": true,
+            "boost_model": "none",
+            "interpolation": "Bicubic",
+            "visibility": 1,
+            "codeformer_weight": 0.5,
+            "restore_with_main_after": false
+        },
+        "class_type": "ReActorFaceBoost",
+        "_meta": {
+            "title": "ReActor 🌌 Face Booster"
+        }
+    },
+    "21": {
+        "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+                "11",
+                0
+            ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+            "title": "Save Image"
         }
     }
 }
