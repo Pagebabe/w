@@ -3,5 +3,17 @@ models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
-workflows: []
-normal_workflows: []
+workflows:
+  - id: 044kol7114nb
+    name: lll_api.json
+    file: z/lll_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+normal_workflows:
+  - id: nn7yzstves
+    name: lll.json
+    file: z/lll.json
+    version: 0
