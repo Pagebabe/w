@@ -105,5 +105,26 @@
     "pip": [],
     "preemptions": [],
     "cached": "False"
+  },
+  {
+    "name": "OpenPose Editor",
+    "url": "https://github.com/space-nuko/ComfyUI-OpenPose-Editor",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "space-nuko",
+      "title": "OpenPose Editor",
+      "id": "openpose-editor",
+      "reference": "https://github.com/space-nuko/ComfyUI-OpenPose-Editor",
+      "files": [
+        "https://github.com/space-nuko/ComfyUI-OpenPose-Editor"
+      ],
+      "install_type": "git-clone",
+      "description": "A port of the openpose-editor extension for stable-diffusion-webui. NOTE: Requires [a/this ComfyUI patch](https://github.com/comfyanonymous/ComfyUI/pull/711) to work correctly"
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
   }
 ]
