@@ -149,5 +149,25 @@
     "pip": [],
     "apt": [],
     "cached": "False"
+  },
+  {
+    "name": "OpenPose Keypoint Extractor",
+    "url": "https://github.com/hughescr/ComfyUI-OpenPose-Keypoint-Extractor",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "hughescr",
+      "title": "OpenPose Keypoint Extractor",
+      "reference": "https://github.com/hughescr/ComfyUI-OpenPose-Keypoint-Extractor",
+      "files": [
+        "https://github.com/hughescr/ComfyUI-OpenPose-Keypoint-Extractor"
+      ],
+      "install_type": "git-clone",
+      "description": "This is a single node which can take the POSE_KEYPOINT output from the OpenPose extractor node, parse it, and return x,y,width,height bounding boxes around any elements of the OpenPose skeleton"
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
   }
 ]
