@@ -125,7 +125,7 @@
     "nodes": [],
     "pip": [],
     "apt": [
-      "apt install"
+      "apt install dep1"
     ],
     "cached": "False"
   }
