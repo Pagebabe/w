@@ -128,5 +128,26 @@
       "apt install dep1"
     ],
     "cached": "False"
+  },
+  {
+    "name": "ComfyUI-Openpose-Editor-Plus",
+    "url": "https://github.com/whmc76/ComfyUI-Openpose-Editor-Plus",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "whmc76",
+      "title": "ComfyUI-Openpose-Editor-Plus",
+      "id": "openpose-editor-plus",
+      "reference": "https://github.com/whmc76/ComfyUI-Openpose-Editor-Plus",
+      "files": [
+        "https://github.com/whmc76/ComfyUI-Openpose-Editor-Plus"
+      ],
+      "install_type": "git-clone",
+      "description": "Nodes:Openpose Editor Plus"
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
   }
 ]
