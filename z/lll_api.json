@@ -1,34 +1,4 @@
 {
-    "3": {
-        "inputs": {
-            "seed": 156680208700286,
-            "steps": 20,
-            "cfg": 8,
-            "sampler_name": "euler",
-            "scheduler": "normal",
-            "denoise": 1,
-            "model": [
-                "4",
-                0
-            ],
-            "positive": [
-                "6",
-                0
-            ],
-            "negative": [
-                "7",
-                0
-            ],
-            "latent_image": [
-                "5",
-                0
-            ]
-        },
-        "class_type": "KSampler",
-        "_meta": {
-            "title": "KSampler"
-        }
-    },
     "4": {
         "inputs": {
             "ckpt_name": "epicrealism_naturalSinRC1VAE.safetensors"
@@ -78,7 +48,7 @@
     "8": {
         "inputs": {
             "samples": [
-                "3",
+                "5",
                 0
             ],
             "vae": [
@@ -112,6 +82,42 @@
         "class_type": "AIO_Preprocessor",
         "_meta": {
             "title": "AIO Aux Preprocessor"
+        }
+    },
+    "11": {
+        "inputs": {
+            "preprocessor": "none",
+            "resolution": 512,
+            "image": [
+                "12",
+                0
+            ]
+        },
+        "class_type": "AIO_Preprocessor",
+        "_meta": {
+            "title": "AIO Aux Preprocessor"
+        }
+    },
+    "12": {
+        "inputs": {
+            "image": "ComfyUI_00005_.png",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "13": {
+        "inputs": {
+            "images": [
+                "11",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
         }
     }
 }
