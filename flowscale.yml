@@ -7,7 +7,7 @@ workflows:
   - id: 044kol7114nb
     name: lll_api.json
     file: z/lll_api.json
-    version: 0
+    version: 1
     description: ''
     inputs: []
     outputs: []
@@ -16,4 +16,4 @@ normal_workflows:
   - id: nn7yzstves
     name: lll.json
     file: z/lll.json
-    version: 0
+    version: 1
